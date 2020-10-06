@@ -1,0 +1,119 @@
+.section-menu__container {
+  position: relative;
+  z-index: $z-fixed;
+
+}
+
+.section-menu {
+  &__title {
+    white-space: nowrap;
+    font-size: 16px;
+
+    @media (min-width:990px) {
+      font-size: 24px;
+    }
+
+  }
+
+  @include flex(space-between);
+  padding: 2rem 1rem;
+  position: absolute;
+  width: 100%;
+
+  &__logo-link {
+    @include flex(space-between);
+    color: $white;
+
+  }
+
+  &__logo-icon {
+    padding-right: 2px;
+    display: flex;
+    margin-top: -5px;
+  }
+
+  &__hamburguer {
+    padding: .5rem 1rem;
+    background-color: $purple;
+    color: $white;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+
+  &__hamburguer:hover {
+    background-color: $white;
+    color: $black;
+  }
+}
+
+.awasome-icon {
+  color: $purple;
+  font-size: 1.5rem;
+}
+
+.section-menu__navigation {
+  position: absolute;
+  display: block;
+  padding: 0.6rem 0;
+  background-color: $white;
+  top: 5.2rem;
+  width: calc(100% - 2rem);
+  margin: 0 auto;
+  display: none;
+
+  @media screen and(min-width:540px) {
+    width: 100%;
+    left: 0;
+  }
+}
+
+.section-menu__item {
+  @include flex(center);
+  padding: 0.5rem 0;
+}
+
+.button-menu>* {
+  background-color: $purple;
+  color: $blue;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid;
+  border-radius: 4px;
+}
+
+@media screen and (min-width:991px) {
+
+  .section-menu {
+    &__hamburguer {
+      display: none;
+    }
+
+    &__navigation {
+      position: static;
+      padding: 0;
+      display: block;
+      background-color: transparent;
+    }
+
+    &__list {
+      @include flex(flex-end);
+
+    }
+
+    &__item {
+      padding: 0 0 0 1.5rem;
+
+      * {
+        color: $white;
+      }
+    }
+  }
+
+  .button-menu>* {
+    border: none;
+    color: $white;
+  }
+}
+
+.show {
+  display: block;
+}

@@ -1,0 +1,70 @@
+$fontOpen: 'Open Sans',
+sans-serif;
+$fontPoppins: 'Poppins',
+sans-serif;
+
+//font-size
+$fontSize-n : 16px;
+$fontSize-s : $fontSize-n * .9;
+$fontSize-xs: $fontSize-n * .8;
+$fontSize-m : $fontSize-n * 1.5;
+$fontSize-l : $fontSize-n * 2.5;
+$fontSize-xl: $fontSize-n * 3.5;
+$fontSize-xxl: $fontSize-n * 4.5;
+//Colors
+$purple: #5e2ced;
+$gray: #dfd7f5;
+$grayText: #777;
+$white : #fff;
+$black : #000;
+$blue : #00aeff;
+$grayBack: #f1f1f1;
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+//z-index
+$z-back :-10;
+$z-normal :1;
+$z-tooltip :10;
+$z-fixed :100;
+$z-overlay :1000;
+
+body {
+  font-family: $fontOpen;
+  font-size: $fontSize-n;
+
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 1px;
+
+}

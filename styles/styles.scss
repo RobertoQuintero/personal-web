@@ -1,0 +1,8 @@
+@import './config/reset';
+@import './config/fonts';
+@import './config/layout';
+@import './config/mixins';
+
+@import '../components/Organisms/Header/Header.scss';
+@import '../components/Molecules/MainMenu/MainMenu.scss';
+@import '../components/Organisms/Banner/Banner.scss';
