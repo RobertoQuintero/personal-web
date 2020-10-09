@@ -12,7 +12,7 @@ const Banner = () => {
         <div className="section-banner__container break-points">
           <div className="section-banner__text">
             <h2 className="section-banner__title">
-              Best Marketing Platform To Really Grow Your Business
+              Programador Javascript Jr en Poza Rica Ver
             </h2>
             <Button />
           </div>

@@ -28,6 +28,7 @@
     font-size: $fontSize-m;
     text-shadow: 1px 1px $black;
     line-height: 1.2;
+    line-height: 1.5;
 
     @media screen and (min-width:575px) {
       font-size: $fontSize-l*1.1;
