@@ -1,30 +1,30 @@
 import Link from "next/link";
 
-const MainMenu = (props) => {
-  const handleChangeClass = () => {
-    props.onClick();
-  };
-
+const MainMenu = ({ menu, toggleMenu }) => {
   return (
-    <nav className={`section-menu__navigation ${props.show}`}>
+    <nav
+      className={`section-menu__navigation `}
+      ref={menu}
+      onClick={toggleMenu}
+    >
       <ul className="section-menu__list">
         <li className="section-menu__item">
-          <Link href="/" onClick={() => handleChangeClass()}>
+          <Link href="/">
             <a>Inicio</a>
           </Link>
         </li>
         <li className="section-menu__item">
-          <Link href="/about" onClick={() => handleChangeClass()}>
+          <Link href="/about">
             <a>Bio</a>
           </Link>
         </li>
         <li className="section-menu__item">
-          <Link href="/portfolio" onClick={() => handleChangeClass()}>
+          <Link href="/portfolio">
             <a>Portafolio</a>
           </Link>
         </li>
         <li className="section-menu__item">
-          <Link href="/contact" onClick={() => handleChangeClass()}>
+          <Link href="/contact">
             <a>Contacto</a>
           </Link>
         </li>

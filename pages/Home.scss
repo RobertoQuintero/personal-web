@@ -1,0 +1,42 @@
+.home {
+  padding-top: 150px;
+}
+
+.home__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &Text {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid $white;
+    border-radius: 6px;
+    color: $white;
+  }
+
+  &Icons {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+    a {
+      margin: 0 10px;
+      color: $white;
+    }
+
+    .fa {
+      font-size: 22px;
+
+    }
+  }
+}
+
+.home__cardImage {
+  width: 200px;
+
+  & img {
+    border-radius: 50%;
+    box-shadow: 1px 1px 22px rgba(255, 255, 255, .5);
+  }
+}

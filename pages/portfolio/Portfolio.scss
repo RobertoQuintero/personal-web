@@ -21,9 +21,14 @@
   padding: 10px 0;
   font-family: $fontPoppins;
   font-size: 20px;
+  color: #fff;
 
   @media (min-width:990px) {
     padding: 20px 0;
     font-size: 24px;
   }
+}
+
+.portfolio {
+  padding-top: 150px;
 }

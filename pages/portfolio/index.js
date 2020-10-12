@@ -4,7 +4,7 @@ import { portfolio } from "../../portfolio";
 
 const Portfolio = () => {
   return (
-    <div className="break-points portfolio">
+    <main className="break-points portfolio">
       <h2 className="page__title">Portafolio y prácricas</h2>
       <div className="portfolio__items">
         {portfolio.map((item) => (
@@ -17,7 +17,7 @@ const Portfolio = () => {
           />
         ))}
       </div>
-    </div>
+    </main>
   );
 };
 

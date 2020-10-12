@@ -11,14 +11,14 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Header />
-      {router.pathname === "/" ? (
+      {/* {router.pathname === "/" ? (
         <Banner />
       ) : (
         <section
           className="section-banner__pages"
           style={{ backgroundImage: "url(web.jpg)" }}
         ></section>
-      )}
+      )} */}
       <Component {...pageProps} />
     </>
   );

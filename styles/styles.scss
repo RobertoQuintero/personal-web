@@ -2,9 +2,11 @@
 @import './config/fonts';
 @import './config/layout';
 @import './config/mixins';
+@import './config/font-awesome.css';
 
 @import '../components/Organisms/Header/Header.scss';
 @import '../components/Molecules/MainMenu/MainMenu.scss';
 @import '../components/Organisms/Banner/Banner.scss';
 @import '../components/Molecules/Card/Card.scss';
 @import '../pages/portfolio/Portfolio.scss';
+@import '../pages/Home.scss';

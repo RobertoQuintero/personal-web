@@ -6,7 +6,6 @@ function BarsIcon(props) {
       <g
         fill="none"
         fillRule="evenodd"
-        stroke="#2a2e3b"
         strokeLinecap="round"
         strokeLinejoin="round"
       >

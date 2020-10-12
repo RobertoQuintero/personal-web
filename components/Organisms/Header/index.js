@@ -1,27 +1,21 @@
 import MainMenu from "../../Molecules/MainMenu";
-import Link from "next/link";
 import Logo from "../../Molecules/Logo";
 import BarsIcon from "../../Atoms/Icons/BarsIcon";
-import { useState } from "react";
+import { createRef } from "react";
+
+const menu = createRef();
 
 const Header = () => {
-  const [show, setShow] = useState("");
+  const toggleMenu = () => menu.current.classList.toggle("show");
 
-  const handleToggle = () => {
-    show === "show" ? setShow("") : setShow("show");
-  };
-
-  const changeClass = () => {
-    setShow("");
-  };
   return (
     <div className="section-menu__container break-points">
       <header className={`section-menu `}>
         <Logo />
-        <i className="section-menu__hamburguer" onClick={handleToggle}>
-          <BarsIcon />
+        <i className="section-menu__hamburguer" onClick={toggleMenu}>
+          <BarsIcon width={32} height={32} stroke="#000" />
         </i>
-        <MainMenu show={show} onClick={changeClass} />
+        <MainMenu menu={menu} toggleMenu={toggleMenu} />
       </header>
     </div>
   );

@@ -39,7 +39,8 @@ $z-overlay :1000;
 body {
   font-family: $fontOpen;
   font-size: $fontSize-n;
-
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 6%, rgba(9, 9, 121, 0.9962359943977591) 70%);
 }
 
 a {
