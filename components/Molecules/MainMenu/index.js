@@ -23,20 +23,6 @@ const MainMenu = ({ menu, toggleMenu }) => {
             <a>Portafolio</a>
           </Link>
         </li>
-        <li className="section-menu__item">
-          <Link href="/contact">
-            <a>Contacto</a>
-          </Link>
-        </li>
-        {/* <li className="section-menu__item button-menu">
-          <Link
-            href="/register"
-            activeClassName="activo"
-            onClick={() => handleChangeClass()}
-          >
-            Register Now
-          </Link>
-        </li> */}
       </ul>
     </nav>
   );
