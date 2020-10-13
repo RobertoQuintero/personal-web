@@ -1,6 +1,7 @@
 .portfolio__items {
   padding: 10px;
 
+
   @media (min-width:767px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -31,4 +32,5 @@
 
 .portfolio {
   padding-top: 150px;
+  min-height: 100vh;
 }

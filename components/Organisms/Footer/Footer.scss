@@ -1,0 +1,55 @@
+.footer__container {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: $black;
+
+}
+
+
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+
+  a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    margin: 5px;
+    color: $white;
+    font-size: 20px;
+    transition: .2s;
+  }
+
+  a:hover {
+    background-color: $white;
+    color: $black;
+  }
+
+
+}
+
+.footer p {
+  color: $white;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (min-width:990px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      font-size: 20px;
+
+    }
+  }
+}

@@ -3,6 +3,7 @@ import Header from "../components/Organisms/Header";
 import "../styles/globals.css";
 import "../styles/styles.scss";
 import { useRouter } from "next/router";
+import Footer from "../components/Organisms/Footer/Footer";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -11,15 +12,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Header />
-      {/* {router.pathname === "/" ? (
-        <Banner />
-      ) : (
-        <section
-          className="section-banner__pages"
-          style={{ backgroundImage: "url(web.jpg)" }}
-        ></section>
-      )} */}
+
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }
