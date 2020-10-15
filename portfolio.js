@@ -34,4 +34,11 @@ export const portfolio = [
       "https://musicodiy.cdbaby.com/wp-content/uploads/2018/07/Spotify_Logo_feature.png",
     url: "https://spoticlone-73c24.web.app/",
   },
+  {
+    name: "Clon de Giphy",
+    description: "Sencilla app similiar a la interfaz de Giphy",
+    image:
+      "https://i.blogs.es/b7de1b/facebook-compra-giphy-integracion-instagram/840_560.jpg",
+    url: "https://giffy-lilac.vercel.app",
+  },
 ];

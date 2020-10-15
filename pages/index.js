@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { ImageItem, imagesTop, imagesDown } from "../images";
 
 export default function Home() {
   return (
@@ -14,38 +15,14 @@ export default function Home() {
           <div className="home__cardText">
             <h2>Programador Javascript Jr.</h2>
             <div className="home__cardIcons">
-              <i>
-                <img src="html.png" alt="" />
-              </i>
-              <i>
-                <img src="css.png" alt="" />
-              </i>
-              <i>
-                <img src="js.png" alt="" />
-              </i>
-              <i>
-                <img src="pug.png" alt="" />
-              </i>
-              <i>
-                <img src="sass.png" alt="" />
-              </i>
+              {imagesTop.map((image) => (
+                <ImageItem key={image.name} name={image.name} />
+              ))}
             </div>
             <div className="home__cardIcons">
-              <i>
-                <img src="react.png" alt="" />
-              </i>
-              <i>
-                <img src="node.png" alt="" />
-              </i>
-              <i>
-                <img src="firebase.png" alt="" />
-              </i>
-              <i>
-                <img src="npm.png" alt="" />
-              </i>
-              <i>
-                <img src="git.png" alt="" />
-              </i>
+              {imagesDown.map((image) => (
+                <ImageItem key={image.name} name={image.name} />
+              ))}
             </div>
           </div>
         </div>
