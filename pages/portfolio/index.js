@@ -1,16 +1,14 @@
-import React from "react";
 import SeoComponent from "../../components/Atoms/SeoComponent";
 import Card from "../../components/Molecules/Card/Card";
 import { portfolio } from "../../portfolio";
 
-const seo = {
-  title: "Portafolio",
-  description: "Estos son algunos proyectos en los que he trabajado",
-  url: "https://robertoquintero.vercel.app/portfolio",
-  imageUrl: "https://robertoquintero.vercel.app/roberto.jpg",
-};
-
 const Portfolio = () => {
+  const seo = {
+    title: "Portafolio",
+    description: "Bienvenidos a mi página web gracias por visitarme",
+    url: "https://robertoquintero.vercel.app/portfolio",
+    imageUrl: "https://robertoquintero.vercel.app/roberto.jpg",
+  };
   return (
     <>
       <SeoComponent seo={seo} />
@@ -24,6 +22,7 @@ const Portfolio = () => {
               description={item.description}
               image={item.image}
               url={item.url}
+              urlCode={item.urlCode}
             />
           ))}
         </div>

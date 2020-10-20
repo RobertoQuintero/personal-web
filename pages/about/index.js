@@ -55,36 +55,36 @@ const About = () => {
         <p className="paragraph">Gracias por llegar hasta aquí!</p>
         <p className="paragraph">Tu amigo Roberto.</p>
       </main>
-      <style>{`
-      main{
-        min-height: 100vh;
-        padding: 100px 0 15px;
-        color: #fff;
-        font-family: 'Poppins', sans-serif;
-        font-size:15px;
-      }
-      .paragraph{
-        padding: 10px 15px;
-      }
-      .title{
-        padding:10px 15px;
-      }
-      .image__container{
-        max-width:500px;
-        margin:15px auto;
-        padding:0 15px
-      }
-      img{
-        border-radius:6px;
-        width:100%
-      }
-
-      @media (min-width:990px){
-        main{
-          font-size: 16px
+      <style jsx>{`
+        main {
+          min-height: 100vh;
+          padding: 100px 0 15px;
+          color: #fff;
+          font-family: "Poppins", sans-serif;
+          font-size: 15px;
         }
-      }
-    `}</style>
+        .paragraph {
+          padding: 10px 15px;
+        }
+        .title {
+          padding: 10px 15px;
+        }
+        .image__container {
+          max-width: 500px;
+          margin: 15px auto;
+          padding: 0 15px;
+        }
+        img {
+          border-radius: 6px;
+          width: 100%;
+        }
+
+        @media (min-width: 990px) {
+          main {
+            font-size: 16px;
+          }
+        }
+      `}</style>
     </>
   );
 };

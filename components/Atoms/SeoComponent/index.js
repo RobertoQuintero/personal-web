@@ -2,7 +2,7 @@ import { NextSeo } from "next-seo";
 
 const SeoComponent = ({ seo }) => {
   console.log(seo);
-  const { title, description, imgUrl, url } = seo;
+  const { title, description, imageUrl, url } = seo;
   return (
     <NextSeo
       title={`${title} | Roberto Quintero`}
@@ -13,9 +13,9 @@ const SeoComponent = ({ seo }) => {
         description,
         images: [
           {
-            url: imgUrl,
-            width: 1280,
-            height: 720,
+            url: imageUrl,
+            width: 800,
+            height: 600,
             alt: title,
           },
         ],

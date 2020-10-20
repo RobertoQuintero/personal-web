@@ -1,6 +1,5 @@
-import Head from "next/head";
 import SeoComponent from "../components/Atoms/SeoComponent";
-import { ImageItem, imagesTop, imagesDown } from "../images";
+import { ImageItem, imagesTop } from "../images";
 
 const seo = {
   title:'Bienvenidos',
