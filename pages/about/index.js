@@ -1,11 +1,21 @@
+import SeoComponent from "../../components/Atoms/SeoComponent";
+
+const seo = {
+  title: "Acerca de mi",
+  description: "Bienvenidos a mi página web gracias por visitarme",
+  url: "https://robertoquintero.vercel.app/about",
+  imageUrl: "https://robertoquintero.vercel.app/escuela.jpg",
+};
+
 const About = () => {
   return (
     <>
+      <SeoComponent seo={seo} />
       <main className="break-points">
         <div className="image__container">
           <img src="escuela.jpg" alt="img" />
         </div>
-        <h2 className="title">Una pequeña descripción</h2>
+        <h2 className="title">Una pequeña descripción.</h2>
         <p className="paragraph">
           Hola! Mi nombre es Roberto Carlos Quintero Martinez, egresado de la
           carrera de Ing. en Sistemas Computacionales del Tec de Poza Rica.
@@ -40,10 +50,10 @@ const About = () => {
           y asi facilitar el contacto en diferentes medios sociales, para todo
           aquel que necesite apoyo, asesoria, quien quiera aprender sobre la
           elaboración de paginas web o necesite llevar a cabo algun proyecto,
-          ofrezco mi servicio como desarrollador web
+          ofrezco mi servicio como desarrollador web.
         </p>
         <p className="paragraph">Gracias por llegar hasta aquí!</p>
-        <p className="paragraph">Tu amigo Roberto</p>
+        <p className="paragraph">Tu amigo Roberto.</p>
       </main>
       <style>{`
       main{

@@ -14,9 +14,6 @@ export const imagesTop = [
   {
     name: "sass.png",
   },
-];
-
-export const imagesDown = [
   {
     name: "react.png",
   },
@@ -31,6 +28,21 @@ export const imagesDown = [
   },
   {
     name: "git.png",
+  },
+  {
+    name: "bootstrap.png",
+  },
+  {
+    name: "vscode.png",
+  },
+  {
+    name: "redux.png",
+  },
+  {
+    name: "next.png",
+  },
+  {
+    name: "expo.png",
   },
 ];
 
