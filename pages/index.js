@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import SeoComponent from "../components/Atoms/SeoComponent";
 import { ImageItem, imagesTop } from "../images";
 
@@ -7,11 +8,13 @@ const seo = {
   url: 'https://robertoquintero.vercel.app',
   imageUrl:'https://robertoquintero.vercel.app/roberto.jpg'
 }
-export default function Home() {
+
+ function Home() {
   return (
-    <>
+    
+    <main className="home">
+      <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate" >
       <SeoComponent seo={seo}/>
-      <main className="home">
         <div className="home__card">
           <div className="home__cardImage">
             <img src="roberto.jpg" alt="roberto" />
@@ -26,7 +29,10 @@ export default function Home() {
             
           </div>
         </div>
+      </motion.div>
       </main>
-    </>
+    
   );
 }
+
+export default Home

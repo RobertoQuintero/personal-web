@@ -21,11 +21,6 @@ const SeoComponent = ({ seo }) => {
         ],
         site_name: "Roberto Quintero",
       }}
-      twitter={{
-        handle: "@edteamlat",
-        site: "@edteamlat",
-        cardType: "summary_large_image",
-      }}
     />
   );
 };

@@ -1,22 +1,23 @@
-import Banner from "../components/Organisms/Banner";
 import Header from "../components/Organisms/Header";
 import "../styles/globals.css";
 import "../styles/styles.scss";
-import { useRouter } from "next/router";
 import Footer from "../components/Organisms/Footer/Footer";
+import { AnimatePresence } from "framer-motion";
+import App from "next/app";
+class MyApp extends App {
+  render() {
+    const { Component, pageProps, router } = this.props;
 
-function MyApp({ Component, pageProps }) {
-  const router = useRouter();
-
-  console.log(router);
-  return (
-    <>
-      <Header />
-
-      <Component {...pageProps} />
-      <Footer />
-    </>
-  );
+    return (
+      <>
+        <Header />
+        <AnimatePresence exitBeforeEnter>
+          <Component {...pageProps} key={router.route} />
+        </AnimatePresence>
+        <Footer />
+      </>
+    );
+  }
 }
 
 export default MyApp;

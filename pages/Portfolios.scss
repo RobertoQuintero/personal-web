@@ -1,18 +1,20 @@
 .portfolio__items {
-  padding: 10px;
-
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 15px;
 
   @media (min-width:767px) {
-    display: grid;
+    
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
+    
   }
 
   @media (min-width:990px) {
-    display: grid;
+  padding-l: 15px 0;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+
 
   }
 }

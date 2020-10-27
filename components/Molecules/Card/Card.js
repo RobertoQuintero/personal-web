@@ -1,8 +1,12 @@
+import { motion } from "framer-motion";
+
 const Card = ({ name, description, url, image, urlCode }) => {
-  console.log(urlCode);
   return (
     <>
-      <article className="card">
+      <motion.article
+        className="card"
+        whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
+      >
         <div
           className="card__image"
           style={{
@@ -21,7 +25,7 @@ const Card = ({ name, description, url, image, urlCode }) => {
             Código
           </a>
         </div>
-      </article>
+      </motion.article>
       <style jsx>
         {`
           .buttons {
