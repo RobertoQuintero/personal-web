@@ -7,14 +7,14 @@ import App from "next/app";
 class MyApp extends App {
   render() {
     const { Component, pageProps, router } = this.props;
-
+    console.log(router.route);
     return (
       <>
         <Header />
         <AnimatePresence exitBeforeEnter>
           <Component {...pageProps} key={router.route} />
         </AnimatePresence>
-        <Footer />
+        {router.route === "/cv" ? null : <Footer />}
       </>
     );
   }

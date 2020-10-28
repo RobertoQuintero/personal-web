@@ -23,6 +23,11 @@ const MainMenu = ({ menu, toggleMenu }) => {
             <a>Portafolio</a>
           </Link>
         </li>
+        <li className="section-menu__item">
+          <Link href="/cv">
+            <a>Currículum</a>
+          </Link>
+        </li>
       </ul>
     </nav>
   );
