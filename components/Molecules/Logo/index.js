@@ -10,6 +10,7 @@ const Logo = () => {
           <a className="section-menu__logo-link">
             <span className="section-menu__logo-icon">
               <RocketIcon width={32} height={32} stroke="#fff" />
+            
             </span>
             <span className="section-menu__title">Roberto Quintero</span>
           </a>

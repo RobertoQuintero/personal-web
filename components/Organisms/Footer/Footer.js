@@ -17,9 +17,6 @@ const Footer = () => {
           <a href="https://www.facebook.com/nery.quintero" target="_blank">
             <i className="fa fa-facebook"></i>
           </a>
-          <a href="https://wa.me/5217828802912" target="_blank">
-            <i className="fa fa-whatsapp"></i>
-          </a>
         </div>
         <p>Roberto Quintero - 2020</p>
       </div>

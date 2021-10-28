@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import SeoComponent from "../components/Atoms/SeoComponent";
-import { ImageItem, imagesTop } from "../images";
+import { ImageItem,imagesTop } from "../images";
+// import Image from "next/image"
+import FrontImage from '../components/Atoms/Icons/FrontImage'
 
 const seo = {
   title:'Bienvenidos',
@@ -17,6 +19,7 @@ const seo = {
       <SeoComponent seo={seo}/>
         <div className="home__card">
           <div className="home__cardImage">
+          
             <img src="roberto.jpg" alt="roberto" />
           </div>
           <div className="home__cardText">
@@ -26,7 +29,7 @@ const seo = {
                 <ImageItem key={image.name} name={image.name} />
               ))}
             </div>
-            
+            {/* <FrontImage /> */}
           </div>
         </div>
       </motion.div>

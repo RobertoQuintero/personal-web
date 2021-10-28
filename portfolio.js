@@ -55,4 +55,28 @@ export const portfolio = [
     url: "https://businesspage-40753.web.app/",
     urlCode: "https://github.com/RobertoQuintero/documentation",
   },
+  {
+    name: "Página Estética",
+    description: "Página responsive hecha en react para negocio local",
+    image:
+      "https://res.cloudinary.com/dmq9e2wuv/image/upload/v1631057195/y0ghvmpx2vpq5531d7wl.png",
+    url: "https://esteticadeadriana.vercel.app",
+    urlCode: "https://github.com/RobertoQuintero/salon-page",
+  },
+  {
+    name: "Página Grupo Musical",
+    description: "Página publicitaria hecha en Flutter Web",
+    image:
+      "https://res.cloudinary.com/dmq9e2wuv/image/upload/v1629303198/zqafymgkknbjt4pchcug.jpg",
+    url: "https://titanesband.vercel.app/",
+    urlCode: "https://github.com/RobertoQuintero/titanes-page",
+  },
+  {
+    name: "App Android delivery",
+    description: "App para reparto de comidas hecha en Flutter",
+    image:
+      "https://res.cloudinary.com/dmq9e2wuv/image/upload/v1635432739/i4k0khhomlaenrbadric.png",
+    url: "https://play.google.com/store/apps/details?id=com.robertoquintero.oslu_client",
+    urlCode: "",
+  },
 ];
